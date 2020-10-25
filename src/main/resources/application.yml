@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ms_employeedb
+    username: fx
+    password: password
+  jpa:
+    generate-ddl: true
+    hibernate.ddl-auto: update
+  output:
+    ansi:
+        enabled: ALWAYS
+logging:
+    pattern:
+        console: "%clr(%d{HH:mm:ss.SSS}){blue} %clr(---){faint} %clr([%15.15t]){yellow} %clr(:){red} %clr(%m){faint}%n"
+
+target:
+    uri: http://localhost:8082
+
